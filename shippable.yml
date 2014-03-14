@@ -1,7 +1,19 @@
-node_js:
-  - "0.10"
+# Language setting
 language: node_js
-before_script: mkdir -p shippable/codecoverage
+node_js:
+  - 0.8.21
+# Modules to install
+before_script:
+  - npm install express
+  - npm install mocha
+  - npm install assert
+  - npm install stylus
+  - npm install jade
+  - npm install expect.js
+  - npm install should
+  - npm install supertest
+  - npm install nodeunit
+  - npm install underscore
 after_script:
   - ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- -u tdd
   - ./node_modules/.bin/istanbul report cobertura --dir shippable/codecoverage/
