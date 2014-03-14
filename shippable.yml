@@ -1,0 +1,18 @@
+# Language setting
+language: node_js
+node_js: 
+  - 0.8.21
+# Modules to install
+install:
+  - npm install express
+  - npm install mocha
+  - npm install assert
+  - npm install stylus
+  - npm install jade
+  - npm install expect.js
+  - npm install should
+  - npm install supertest
+  - npm install nodeunit
+  - npm install underscore
+script:
+  - nodeunit test/testSumFunc.js
