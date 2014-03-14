@@ -15,5 +15,6 @@ before_script:
   - npm install nodeunit
   - npm install underscore
 after_script:
+  - nodeunit test/testSumFunc.js
   - ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- -u tdd
   - ./node_modules/.bin/istanbul report cobertura --dir shippable/codecoverage/
