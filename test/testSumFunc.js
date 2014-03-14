@@ -12,7 +12,7 @@ exports['sum'] = function(test) {
 
 	//console.log(input);
 	_.each(inputs, function(input) {
-		test.equal(sum.sum(input.text1, input.text2), (input.text1 + input.text2)) ;
+		test.equal(sum.sum(input.text1, input.text2), (input.text1 + input.text2 - 2)) ;
 	});
 	test.done();
 }
