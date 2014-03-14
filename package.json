@@ -8,6 +8,8 @@
   "dependencies": {
     "express": "3.5.0",
     "jade": "*",
-    "stylus": "*"
+    "stylus": "*",
+    "mocha": "1.12.x",
+    "istanbul": "0.1.x"
   }
 }
